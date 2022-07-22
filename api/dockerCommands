@@ -7,6 +7,9 @@ docker images
 To build docker container-
 docker run --name <container_name> -p <docker_port>:<host_port> -d <image_name>
 
+To start a container
+docker start <docker_name>
+
 To stop container-
 docker stop <container_name>
 
@@ -16,9 +19,6 @@ docker ps
 To list all container-
 docker ps -a
 
-To start a container
-docker start <docker_name>
-
 To delete the image -
 docker image rm <image_name> -f(to force)
 
@@ -27,3 +27,9 @@ docker container rm <container_name>
 
 To remove all images, container, volumes
 docker system prune -a
+
+To compose docker up-
+docker-compose up
+
+To compose docker down-
+docker compose down
